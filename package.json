@@ -1,0 +1,49 @@
+{
+  "name": "address-parser",
+  "version": "1.0.0",
+  "description": "A simple address parser.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "data": "node data/index.js",
+    "build": "./node_modules/.bin/babel --source-maps --out-dir bin/ src",
+    "test": "node test/index.js",
+    "prettier": "./node_modules/.bin/prettier --write {src,test}/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kbsletten/address-parser.git"
+  },
+  "keywords": [
+    "javascript",
+    "address",
+    "parser"
+  ],
+  "author": "Kyle Sletten <kbsletten@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kbsletten/address-parser/issues"
+  },
+  "homepage": "https://github.com/kbsletten/address-parser#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-unicode-property-regex": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "prettier": "^1.14.2"
+  },
+  "babel": {
+    "presets": [
+      ["@babel/preset-env", {
+        "targets": {
+          "browsers": "defaults"
+        }
+      }]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-unicode-property-regex"
+    ]
+  }
+}

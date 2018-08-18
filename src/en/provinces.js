@@ -1,0 +1,2 @@
+//THIS CODE WAS CREATED BY A TOOL, REGENERATE IT USING "npm run data"
+export default [/Alberta/ui, /AB/ui, [/British/ui, /Columbia/ui], /BC/ui, /Manitoba/ui, /MB/ui, [/New/ui, /Brunswick/ui], /NB/ui, [/Newfoundland/ui, /and/ui, /Labrador/ui], /NL/ui, [/Northwest/ui, /Territories/ui], /NT/ui, [/Nova/ui, /Scotia/ui], /NS/ui, /Nunavut/ui, /NU/ui, /Ontario/ui, /ON/ui, [/Prince/ui, /Edward/ui, /Island/ui], /PE/ui, /Quebec/ui, /QC/ui, /Saskatchewan/ui, /SK/ui, /Yukon/ui, /YT/ui];
