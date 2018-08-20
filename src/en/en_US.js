@@ -9,7 +9,9 @@ export const culture = {
     word: word,
     street: street,
     direction: direction,
-    state: state
+    state: state,
+    comma: ",",
+    line: "\n"
   }
 };
 export const parser = new AddressParser(culture);

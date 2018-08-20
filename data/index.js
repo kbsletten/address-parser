@@ -11,21 +11,18 @@ function parseStates(inFile, outFile) {
       const match = /^(\w+( \w+)*)\t(\w{2})$/.exec(state.trim());
       if (/\s/.test(match[1])) {
         result.push(
-          `[${match[1]
-            .split(/\s+/)
-            .map(word => `/${word}/ui`)
-            .join(", ")}]`
+          match[1].split(/\s+/)
         );
       } else {
-        result.push(`/${match[1]}/ui`);
+        result.push(match[1]);
       }
-      result.push(`/${match[3]}/ui`);
+      result.push(match[3]);
     }
 
     fs.writeFile(
       outFile,
       `//THIS CODE WAS CREATED BY A TOOL, REGENERATE IT USING "npm run data"
-export default [${result.join(", ")}];
+export default ${JSON.stringify(result)};
 `,
       "utf-8",
       err => {
