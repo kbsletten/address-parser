@@ -36,11 +36,14 @@
   },
   "babel": {
     "presets": [
-      ["@babel/preset-env", {
-        "targets": {
-          "browsers": "defaults"
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": "defaults"
+          }
         }
-      }]
+      ]
     ],
     "plugins": [
       "@babel/plugin-proposal-unicode-property-regex"
