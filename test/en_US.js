@@ -14,7 +14,7 @@ Atascadero, CA 93422`,
       ["word"],
       ["comma"],
       ["word", "state"],
-      ["number"]
+      ["number", "postalCode"]
     ]
   },
   {
@@ -45,7 +45,7 @@ Atascadero, CA 93422`,
       ["word"],
       ["comma"],
       ["word", "state"],
-      ["number"]
+      ["number", "postalCode"]
     ]
   },
   {
@@ -58,7 +58,7 @@ Atascadero, CA 93422`,
       ["number"],
       ["word"],
       ["word", "street", "state"],
-      ["number"]
+      ["number", "postalCode"]
     ]
   },
   {
@@ -89,7 +89,7 @@ Atascadero, CA 93422`,
       ["word"],
       ["comma"],
       ["word", "street", "state"],
-      ["number"]
+      ["number", "postalCode"]
     ]
   }
 ];
