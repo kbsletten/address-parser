@@ -67,14 +67,29 @@ Atascadero, CA 93422`,
     tags: [["number"], ["word", "street"], ["number"]]
   },
   {
-    text: "1055 Lane 11H Powell WY",
-    parts: ["1055", "Lane", "11H", "Powell", "WY"],
+    text: "1055 Lane 11 \u00BD Powell WY",
+    parts: ["1055", "Lane", "11", "\u00BD", "Powell", "WY"],
+    tags: [
+      ["number"],
+      ["word", "street"],
+      ["number"],
+      ["number"],
+      ["word"],
+      ["word", "street", "state"]
+    ]
+  },
+  {
+    text: "74 Rd 2AB, Cody, WY 82414",
+    parts: ["74", "Rd", "2AB", ",", "Cody", ",", "WY", "82414"],
     tags: [
       ["number"],
       ["word", "street"],
       ["number", "word"],
+      ["comma"],
       ["word"],
-      ["word", "street", "state"]
+      ["comma"],
+      ["word", "street", "state"],
+      ["number"]
     ]
   }
 ];
