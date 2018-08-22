@@ -32,6 +32,7 @@
     "@babel/core": "^7.0.0-rc.1",
     "@babel/plugin-proposal-unicode-property-regex": "^7.0.0-rc.1",
     "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-preset-minify": "^0.4.3",
     "prettier": "^1.14.2"
   },
   "babel": {
@@ -43,7 +44,8 @@
             "browsers": "defaults"
           }
         }
-      ]
+      ],
+      "minify"
     ],
     "plugins": [
       "@babel/plugin-proposal-unicode-property-regex"
